@@ -24,6 +24,11 @@ nav, section, .footer {
 	width: 100%;
 	} 
 	
+
+
+
+
+
 /* Header */
 
 header {
@@ -37,10 +42,10 @@ header {
 	}
 
 .navigation img {
-	height: 2em;
+	height: 2.5em;
 	float: left;
 	position: absolute;
-	padding-top: .5em;
+	padding-top: 0.5em;
 	}
 	
 ul.nav-links {
@@ -61,6 +66,11 @@ header ul.nav-links li.active {
 	color: #000;
 	}
 	
+
+
+
+
+
 /* Big image */
 
 #content-top {
@@ -109,11 +119,17 @@ header ul.nav-links li.active {
 	text-align: center;
 	}
 
+
+
+
+
+
 /* Three sections on homepage */
 
 .hp-first, .hp-second, .hp-third {
 	width: 28.333%;
 	margin: 0 2.5%;
+	float: left;
 	}
 
 .hp-first {
@@ -122,20 +138,29 @@ header ul.nav-links li.active {
 	
 .three-options h1 {
 	color: #000;
-	font-size: 1.5em;
-	font-weight: 400;
+	font-size: 3em;
+	text-align: center;
+	padding-top: 1em;
 	}
 
 .three-options h3 {
 	color: #000;
 	font-size: 1.5em;
 	font-weight: 400;
+	color: #333;
+
 	}
 
 .three-options img {
 	width: 80%;
 	padding: 0 10%;
 	}
+
+
+
+
+
+
 
 
 
