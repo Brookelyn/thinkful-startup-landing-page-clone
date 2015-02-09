@@ -1,18 +1,67 @@
 @charset "UTF-8";
 
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-/* CSS Document */
+/* CSS RESET STYLES */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
 
 
 
 /* Global */
 
-body {
-	margin: 0 auto;
-	padding: 0;
-	}
-
-h1, h2, h3, h4, ul, li, p, a {
+h1, h2, h3, h4, h5, ul, li, p, a {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	}
@@ -60,7 +109,7 @@ ul.nav-links li {
 	text-decoration: none;
 	display: inline-block;
 	padding-left: 2em;
-	padding-top: 1.5em;
+	padding-top: 2em;
 	color: #A1A1A1;
 	font-weight: 400;
 	}
@@ -103,17 +152,18 @@ header ul.nav-links li.active {
 .introducing h1 {
 	font-size: 3em;
 	line-height: 1em;
-	margin-bottom: -.1em;
+	margin-bottom: 0.5em;
 	}
 
 .introducing h2 {
 	font-size: 1.5em;
+	margin-bottom: 1em;
 	}
 
 .button {
 	background-color: #EE6804;
 	width: 6em;
-	padding: 1em 1.25em;
+	padding: 0.75em 1.25em;
 	border-radius: 5px;
 	margin: 0 auto;
 	position: relative;
@@ -137,15 +187,13 @@ header ul.nav-links li.active {
 	padding-bottom: 6em;
 	}
 
-.hp-first {
-	float: left;
-	}
 	
 .three-options h1 {
 	color: #000;
 	font-size: 3em;
 	text-align: center;
-	padding-top: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 	}
 
 .three-options h3 {
@@ -158,7 +206,7 @@ header ul.nav-links li.active {
 
 .three-options img {
 	width: 80%;
-	padding: 0 10%;
+	padding: 0 10% 10% 10%;
 	}
 
 
@@ -171,12 +219,27 @@ header ul.nav-links li.active {
 footer {
 	clear: both;
 	height: 25%;
+	margin-top: 10%;
 	padding-bottom: 10%;
 }
 
-#footer p, ul {
+#footer {
+	border-top: 1px solid #A1A1A1;
+	padding: 1.5em;
+}
+
+#footer h5, p, ul {
 	text-align: center;
 	color: #000;
+}
+
+#footer h5 {
+	font-weight: 400;
+}
+
+#footer p {
+	font-size: 0.9em;
+	margin-top: 0.125em;
 }
 
 #footer ul {
@@ -184,21 +247,29 @@ footer {
 	padding: 0;
 }
 
-#footer {
-	border-top: 1px solid #A1A1A1;
-	margin-top: 1em;
-}
-
 #footer li {
-	border-radius: 100%;
+	font-size: 100%;
+	border-radius: 1.25em;
 	width: 2.5em;
 	height: 2.5em;
 	display: inline-block;
 	margin: 1.25em 5px;
 	border: 1px solid #eaebec;
-	padding: 0.625em 0;
-	text-align: center;
-	line-height: 0;
+	text-align: center;	
+	vertical-align: middle;
+	padding: -0.5em 0 0.5em 0;
+}
+
+#footer li.twitter {
+	color: #00aced;
+}
+
+#footer li.facebook {
+	color: #3b5998;
+}
+
+#footer li.instagram {
+	color: #517fa4;
 }
 
 
