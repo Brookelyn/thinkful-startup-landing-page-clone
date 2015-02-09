@@ -142,6 +142,7 @@ header ul.nav-links li.active {
 	top: 50%;
 	left: 50%;
 	margin: -10% 0 0 -30%;
+	overflow: auto;
 	}
 
 .introducing h1, h2, h3 {
@@ -160,10 +161,11 @@ header ul.nav-links li.active {
 	margin-bottom: 1em;
 	}
 
-.button {
+button {
 	background-color: #EE6804;
-	width: 6em;
+	width: 7.75em;
 	padding: 0.75em 1.25em;
+	border-style: none;
 	border-radius: 5px;
 	margin: 0 auto;
 	position: relative;
@@ -171,7 +173,13 @@ header ul.nav-links li.active {
 	color: #FFF;
 	font-size: 1.25em;
 	text-align: center;
+	display: block;
 	}
+
+button:hover {
+	background-color: #CC2900;
+	cursor: pointer;
+}
 
 
 
